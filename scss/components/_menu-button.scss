@@ -1,0 +1,29 @@
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  transition: color 250ms var(--animation);
+  &:hover {
+    color: var(--accent-color);
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+.is-open .icon-cross {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.is-open .icon-menu {
+  display: none;
+}

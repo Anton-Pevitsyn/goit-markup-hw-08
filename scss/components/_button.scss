@@ -1,0 +1,91 @@
+.button {
+  height: 38px;
+  padding: 6px 22px;
+  background-color: var(--background-icon-color);
+  border-radius: 4px;
+  border: 0px;
+  color: var(--title-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  transition: background-color 250ms var(--animation),
+    color 250ms var(--animation);
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    border: 0px;
+    color: var(--main-title-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    outline: none;
+  }
+}
+
+.button-alt {
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  color: var(--main-title-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  &:hover,
+  &:focus {
+    box-shadow: none;
+  }
+}
+.button-round {
+  display: inline-block;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--second-background-color);
+  color: var(--ferst-icon-color);
+
+  &-alt {
+    background-color: var(--footer-background-icon-color);
+    color: var(--main-title-color);
+  }
+}
+
+.button-send {
+  position: relative;
+  padding-left: 29px;
+
+  text-align: left;
+
+  & .send-icon {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+  }
+}
+
+.button-customers {
+  display: flex;
+  height: 90px;
+  width: calc((100%-30px) / 2);
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--ferst-icon-color);
+  background-color: var(--second-background-color);
+  color: var(--ferst-icon-color);
+  transition: border 250ms var(--animation), color 250ms var(--animation);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    background-color: var(--second-background-color);
+    color: var(--accent-color);
+    box-shadow: none;
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100%-30px * 2) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100%-30px * 5) / 6);
+  }
+}
