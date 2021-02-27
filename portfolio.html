@@ -14,24 +14,34 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <nav class="main-nav">
-          <a class="link link-logo" href="./index.html"><span class="logo">Web</span>Studio</a>
-          <ul class="site-nav list">
-            <li class="item"><a class="link nav-link" href="./index.html">Студия</a></li>
-            <li class="item"><a class="link nav-link" id="activ-link" href="./portfolio.html">Портфолио</a></li>
-            <li class="item"><a class="link nav-link" href="#">Контакты</a></li>
-          </ul>
-        </nav>
+        <a class="link link-logo" href="./index.html"><span class="logo">Web</span>Studio</a>
+        <div class="nav-container" data-menu>
+          <nav class="main-nav">
+            <ul class="site-nav list">
+              <li class="item"><a class="link nav-link" href="./index.html">Студия</a></li>
+              <li class="item"><a class="link nav-link" id="activ-link"  href="./portfolio.html">Портфолио</a></li>
+              <li class="item"><a class="link nav-link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
     
-        <address class="contacts">
-          <a class="link contacts-link" href="mailto:info@devstudio.com"> <svg class="mail-icon">
-              <use href="./img/icon/symbol-defs.svg#icon-mail"></use>
-            </svg> info@devstudio.com</a>
-          <a class="link contacts-link" href="tel:+380961111111"><svg class="phon-icon">
-              <use href="./img/icon/symbol-defs.svg#icon-phone"></use>
-            </svg>+38 096 111 11 11</a>
-        </address>
+          <address class="contacts">
+            <a class="link contacts-link" href="mailto:info@devstudio.com"> <svg class="contacts-icon" width=16 height=12>
+                <use href="./img/icon/symbol-defs.svg#icon-mail"></use>
+              </svg> info@devstudio.com</a>
+            <a class="link contacts-link" href="tel:+380961111111">
+              <svg class="contacts-icon" width=10 height=16>
+                <use href="./img/icon/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a>
+          </address>
     
+        </div>
+        <button type="button" class="menu-button" data-menu-button>
+          <svg class="phon-icon" width=40 height=40>
+            <use class="icon-menu" href="./img/icon/symbol-defs.svg#open-menu"></use>
+            <use class="icon-cross" href="./img/icon/symbol-defs.svg#close-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -47,13 +57,13 @@
 
       <ul class="list portfolio-card-list">
         <li class="portfolio-item">
-            <a href="#" class="portfolio-card">
+            <a class="link portfolio-card" href="#">
               <div class="card-thumd">
               <img class="img-card"
+              srcset="./img/portfolio/img1-2x.jpg 2x"
               src="./img/portfolio/img1.jpg"
               alt="Технокряк"
-              width="370"
-              height="294"
+              
             />
             <div class="hover-transform"><p class="text-card">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
             </div>
@@ -64,13 +74,13 @@
             </a>
         </li>
         <li class="portfolio-item">
-          <a href="#" class="portfolio-card">
+          <a class="link portfolio-card" href="#">
             <div class="card-thumd">
             <img class="img-card"
+            srcset="./img/portfolio/img2-2x.jpg 2x"
               src="./img/portfolio/img2.jpg"
               alt="Постер New Orlean vs Golden Star"
-              width="370"
-              height="294"
+              
             />
             <div class="hover-transform"><p class="text-card">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
             </div>
@@ -81,13 +91,13 @@
             </a>
         </li>
         <li class="portfolio-item">
-          <a href="#" class="portfolio-card">
+          <a class="link portfolio-card" href="#">
             <div class="card-thumd">
             <img class="img-card"
+            srcset="./img/portfolio/img3-2x.jpg 2x"
               src="./img/portfolio/img3.jpg"
               alt="Ресторан Seafood"
-              width="370"
-              height="294"
+             
             />
             <div class="hover-transform"><p class="text-card">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
             </div>
@@ -98,13 +108,13 @@
             </a>
         </li>
         <li class="portfolio-item">
-          <a href="#" class="portfolio-card">
+          <a class="link portfolio-card" href="#">
             <div class="card-thumd">
             <img class="img-card"
+            srcset="./img/portfolio/img4-2x.jpg 2x"
               src="./img/portfolio/img4.jpg"
               alt="Проект Prime"
-              width="370"
-              height="294"
+              
             />
             <div class="hover-transform"><p class="text-card">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
             </div>
@@ -115,13 +125,13 @@
             </a>
         </li>
         <li class="portfolio-item">
-          <a href="#" class="portfolio-card">
+          <a class="link portfolio-card" href="#">
             <div class="card-thumd">
             <img class="img-card"
+            srcset="./img/portfolio/img5-2x.jpg 2x"
               src="./img/portfolio/img5.jpg"
               alt="Проект Boxes"
-              width="370"
-              height="294"
+              
             />
             <div class="hover-transform"><p class="text-card">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
             </div>
@@ -132,13 +142,13 @@
             </a>
         </li>
         <li class="portfolio-item">
-          <a href="#" class="portfolio-card">
+          <a class="link portfolio-card" href="#">
             <div class="card-thumd">
             <img class="img-card"
+            srcset="./img/portfolio/img6-2x.jpg 2x"
               src="./img/portfolio/img6.jpg"
               alt="Inspiration has no Borders"
-              width="370"
-              height="294"
+             
             />
             <div class="hover-transform"><p class="text-card">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
             </div>
@@ -149,13 +159,13 @@
             </a>
         </li>
         <li class="portfolio-item">
-          <a href="#" class="portfolio-card">
+          <a class="link portfolio-card" href="#">
             <div class="card-thumd">
             <img class="img-card"
+            srcset="./img/portfolio/img7-2x.jpg 2x"
               src="./img/portfolio/img7.jpg"
               alt="Издание Limited Edition"
-              width="370"
-              height="294"
+              
             />
             <div class="hover-transform"><p class="text-card">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
             </div>
@@ -166,10 +176,11 @@
             </a>
         </li>
         <li class="portfolio-item">
-          <a href="#" class="portfolio-card">
+          <a class="link portfolio-card" href="#">
             <div class="card-thumd">
             <img class="img-card" src="./img/portfolio/img8.jpg" 
-            alt="Проект LAB" width="370" height="294" />
+            srcset="./img/portfolio/img8-2x.jpg 2x"
+            alt="Проект LAB" />
             <div class="hover-transform"><p class="text-card">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
             </div>
             <div class="card-deckription">
@@ -179,13 +190,14 @@
             </a>
         </li>
         <li class="portfolio-item">
-          <a href="#" class="portfolio-card">
+          <a class="link portfolio-card" href="#">
             <div class="card-thumd">
             <img class="img-card"
               src="./img/portfolio/img9.jpg"
+              srcset="./img/portfolio/img9-2x.jpg 2x"
               alt="Growing Business"
-              width="370"
-              height="294"
+
+              
             />
             <div class="hover-transform"><p class="text-card">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p></div>
             </div>
@@ -200,43 +212,45 @@
     </main>
 <footer>
   <div class="container footer-container">
-    <div class="address-container">
-      <a class="link link-logo link-logo-alt" href="./index.html"><span class="logo">Web</span>Studio</a>
-      <address class="footer-address">
-        <ul class="list footer-address-list">
-          <li class="item"> г. Киев, пр-т Леси Украинки, 26</li>
-          <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+    <div class="footer-ferst-container">
+      <div class="address-container">
+        <a class="link link-logo link-logo-alt" href="./index.html"><span class="logo">Web</span>Studio</a>
+        <address class="footer-address">
+          <ul class="list footer-address-list">
+            <li class="item"> г. Киев, пр-т Леси Украинки, 26</li>
+            <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+        </address>
+      </div>
+      <div class="social-container">
+        <h4 class="social-container-title">Присоединяйся</h4>
+        <ul class="list social-list">
+          <li class="item"><a href="#" class="link button button-round button-round-alt"><svg
+                class="icon icon-instagram" width=20 height=20>
+                <use href="./img/icon/symbol-defs.svg#icon-instagram"></use>
+              </svg></a></li>
+          <li class="item"><a href="#" class="link button button-round button-round-alt"><svg class="icon icon-twitter"
+                width=20 height=20>
+                <use href="./img/icon/symbol-defs.svg#icon-twitter"></use>
+              </svg></a></li>
+          <li class="item"><a href="#" class="link button button-round button-round-alt"><svg class="icon icon-facebook"
+                width=20 height=20>
+                <use href="./img/icon/symbol-defs.svg#icon-facebook"></use>
+              </svg></a></li>
+          <li class="item"><a href="#" class="link button button-round button-round-alt"><svg class="icon icon-linkedin"
+                width=20 height=20>
+                <use href="./img/icon/symbol-defs.svg#icon-linkedin"></use>
+              </svg></a></li>
         </ul>
-      </address>
-    </div>
-    <div class="social-container">
-      <h2 class="social-container-title">Присоединяйся</h2>
-      <ul class="list social-list">
-        <li class="item"><a href="#" class="link button button-round button-round-alt"><svg class="icon icon-instagram"
-              width=20 height=20>
-              <use href="./img/icon/symbol-defs.svg#icon-instagram"></use>
-            </svg></a></li>
-        <li class="item"><a href="#" class="link button button-round button-round-alt"><svg class="icon icon-twitter"
-              width=20 height=20>
-              <use href="./img/icon/symbol-defs.svg#icon-twitter"></use>
-            </svg></a></li>
-        <li class="item"><a href="#" class="link button button-round button-round-alt"><svg class="icon icon-facebook"
-              width=20 height=20>
-              <use href="./img/icon/symbol-defs.svg#icon-facebook"></use>
-            </svg></a></li>
-        <li class="item"><a href="#" class="link button button-round button-round-alt"><svg class="icon icon-linkedin"
-              width=20 height=20>
-              <use href="./img/icon/symbol-defs.svg#icon-linkedin"></use>
-            </svg></a></li>
-      </ul>
+      </div>
     </div>
     <div class="form-container form-item">
-      <h2 class="social-container-title">Подпишитесь на рассылку</h2>
+      <h4 class="social-container-title">Подпишитесь на рассылку</h4>
       <form class="form-send" name="subscription-form" class="subscription-form">
-        <input type="email" name="email" placeholder="E-mail" class="form-input">
-        <button class="button button-alt button-send" type="submit">Подписаться<svg class="send-icon" width=24
-            height=24>
+        <input type="email" name="email" placeholder="E-mail" class="form-input form-send-input">
+        <button class="button button-alt button-send" type="submit"> Подписаться
+          <svg class="send-icon" width=24 height=24>
             <use href="./img/icon/symbol-defs.svg#send"></use>
           </svg>
         </button>
@@ -244,5 +258,6 @@
     </div>
   </div>
 </footer>
+<script src="./js/menu.js"></script>
   </body>
 </html>

@@ -1,0 +1,15 @@
+.form-input {
+  position: relative;
+  height: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid var(--form-border-color);
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+  transition: border 250ms var(--animation);
+  &:focus-within,
+  &:hover {
+    border: 1px solid var(--accent-color);
+  }
+}

@@ -1,0 +1,50 @@
+.specialization-section {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  background-color: var(--second-background-color);
+}
+
+.specialization-section-container {
+  text-align: center;
+  padding-bottom: 94px;
+}
+.specialization-list {
+  display: flex;
+}
+.specialization-list .item + .item {
+  margin-left: 30px;
+}
+.specialization-list .item {
+  position: relative;
+  width: calc((100%-30px * 2) / 3);
+}
+.img-card {
+  display: block;
+}
+.specialization-list .img-card {
+  width: 100%;
+}
+
+.specialization-section .section-title {
+  margin-bottom: 50px;
+}
+
+.specialization-list .item-container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: var(--specialization-title-background-color);
+}
+
+.specialization-list .item-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}

@@ -1,0 +1,124 @@
+.portfolio-container {
+  padding: 60px 15px;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 15px;
+  }
+}
+
+.portfolio-button-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-right: -8px;
+  margin-bottom: -15px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-left: 0;
+  }
+}
+
+.portfolio-button-list .item {
+  margin-right: 8px;
+  margin-bottom: 15px;
+}
+
+.portfolio-card-list {
+  margin: 25px -15px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 35px -15px;
+  }
+}
+
+.portfolio-card {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  color: var(--main-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  transition: box-shadow 250ms var(--animation),
+    transform 250ms var(--animation);
+  &:focus,
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.img-card {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    height: 294px;
+  }
+}
+
+.card-deckription {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  background-color: var(--main-title-color);
+  border: 1px solid var(--partfolio-border-color);
+}
+
+.portfolio-card-list .portfolio-item {
+  width: calc(100% - 30px);
+  margin: 15px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px * 2) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 3) / 3);
+  }
+}
+
+.card-title {
+  margin-bottom: 4px;
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: start;
+}
+
+.portfolio-card-list .portfolio-card .portfolio-card-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 30px;
+  color: var(--main-text-color);
+}
+
+.card-thumd {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-transform {
+  position: absolute;
+  padding-top: 64px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: var(--hover-card-background-color);
+  transition: transform 250ms var(--animation);
+}
+
+.hover-transform .text-card {
+  font-weight: normal;
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+  transform: translatey(0%);
+}
+
+.portfolio-card:focus .hover-transform,
+.portfolio-card:hover .hover-transform {
+  transform: translatey(-100%);
+}

@@ -1,0 +1,69 @@
+.team-section {
+  background-color: var(--ferst-background-color);
+}
+
+.team-section .container {
+  padding-top: 60px;
+  padding-bottom: 45px;
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 79px;
+  }
+}
+.team-section .section-title {
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.team-section-list {
+  margin-top: -15px;
+  margin-bottom: -15px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.team-section-list > .item {
+  margin: 15px;
+  width: calc(100%-30px);
+  padding-bottom: 30px;
+  background-color: var(--main-title-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px * 2) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 4) / 4);
+  }
+}
+
+.team-section-list .img-card {
+  width: 100%;
+  margin: 0;
+}
+
+.team-section .item-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: var(--title-color);
+}
+
+.team-section .item-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: var(--main-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}

@@ -1,0 +1,154 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 95px 15px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--backdrop-color);
+  opacity: 1;
+  transition: opacity 250ms var(--animation);
+  overflow-y: scroll;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.is-hidden .modal {
+  transform: translate(-50%, -50%) skew(60deg);
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  background-color: var(--second-background-color);
+  transition: transform 250ms var(--animation);
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 450px;
+    transform: translate(-50%, -50%);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.button-close {
+  position: absolute;
+  right: 16px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--second-background-color);
+  outline: none;
+  border: 0px;
+  transition: color 250ms var(--animation);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.modal-title {
+  margin-top: 0px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-text-color);
+  @media screen and (min-width: 1200px) {
+    line-height: 23px;
+  }
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 4px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
+}
+
+.form-field .form-input {
+  width: 100%;
+  padding-left: 42px;
+}
+
+.form-item {
+  position: relative;
+  transition: solid 250ms var(--animation), color 250ms var(--animation);
+  &:focus-within,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+.form-item .icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+}
+
+.form-item + .form-item {
+  margin-top: 10px;
+}
+.form-field .textarea {
+  resize: none;
+  height: 120px;
+  padding: 16px 12px 12px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-field .textarea::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: var(--placeholder-color);
+}
+.form-link {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.form-policy {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.form-checkbox {
+  margin-top: 20px;
+}
+
+.modal-form .button {
+  margin-top: 30px;
+  margin-left: 25%;
+}

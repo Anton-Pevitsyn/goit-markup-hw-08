@@ -23,14 +23,13 @@ body {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: tomato;
+  /*background-color: tomato; */
   @media screen and (min-width: 480px) {
     width: 480px;
   }
   @media screen and (min-width: 768px) {
     width: 768px;
   }
-
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }
@@ -49,4 +48,38 @@ h1 {
   @media screen and (min-width: 1200px) {
     font-size: 44px;
   }
+}
+
+h2 {
+  margin: 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+h3 {
+  margin: 0px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--title-color);
+}
+
+h4 {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
